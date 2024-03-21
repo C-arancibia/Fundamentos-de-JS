@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>SuperHero 🦸‍♂️</title>
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <nav>
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="assets/img/sh2.jpg" alt="" width="80px";/>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Contenido -->
+    <header class="text-center">
+        <div>
+            <img src="assets/img/sh1.jpg" alt="" width="" />
+        </div>
+        <div>
+            <h1>Encuentra tu SuperHero</h1>
+            <form action="">
+                <p>
+                    <label for="superhero">Ingresa el número del SuperHero a buscar</label><br />
+                    <input type="text" name="superhero" id="superhero" placeholder="Busca un heroe 🦸" />
+                </p>
+                <p>
+                    <input type="submit" value="Buscar" />
+                </p>
+            </form>
+        </div>
+    </header>    
+
+    <!-- Card de super héroe -->
+    <div class="container">
+        <div class="card-column">
+            <div id="cardsSuperHero" style="width: 20rem;"></div>
+        </div>
+
+        <!-- Grafico en Canvas -->
+        <div class="chart-column">
+            <div class="chart-container">
+                <h4>Estadísticas de Poder</h4>
+                <canvas id="powerstats-chart" width="400" height="400"></canvas>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- JavaScript -->
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
+
+
